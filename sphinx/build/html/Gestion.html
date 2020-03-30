@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES">
+  <head>
+    <meta charset="utf-8" />
+    <title>Información &#8212; documentación de Proyecto Coches - </title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Código del Proyecto" href="proyecto.html" />
+    <link rel="prev" title="Bienvenido a la documentación del proyecto" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="informacion">
+<h1>Información<a class="headerlink" href="#informacion" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="ventana-principal">
+<h2>Ventana principal<a class="headerlink" href="#ventana-principal" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En la ventana principal podremos elegir entre ir a controlar los productos y servicios o
+sin embargo, los clientes.
+Está estructurada con dos botones principales a los que se le añade un botón para la opción
+de salida.
+Dentro de esta está insertado dos ventanas, las cuales hacen invisible esta al selecionarlas:</p>
+<div class="section" id="producto">
+<h3>Producto<a class="headerlink" href="#producto" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En esta clase, implementa una  ventana donde aparencen los servicios y productos, los cuales el usuario decide que hacer con ellos.
+Implemento para ello un GtkTreeview para enseñar los productos actuales, tres botones para elegir qué hacer con el producto seleccionado;
+Nuevo con la llamada a la clase nuevoser, Eliminar con la clase eliminaser e imprimir con el método imprimir() el cual utiliza la librería Reportlab.</p>
+<div class="section" id="nuevoser">
+<h4>nuevoser<a class="headerlink" href="#nuevoser" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Es una clase en la que está formada por un dos entradas de texto y un botón para accionar
+la inserción del producto</p>
+</div>
+<div class="section" id="eliminaser">
+<h4>eliminaser<a class="headerlink" href="#eliminaser" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>La misma que la de antes solo que cambiando el cursor para borrar el campo del valor que se ingrese
+imprimir()
+«»»»»»»»»»
+En esta clase se realiza una lectura de los datos de la base para poder listar todos los productos,
+para que luego sean imprimidos a través de la librería de Reportlab.</p>
+</div>
+</div>
+<div class="section" id="cliente">
+<h3>Cliente<a class="headerlink" href="#cliente" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Implemento otra ventana para controlar la gestion de clientes.
+Esta ventana hace que aparezca un listado de clientes y unas acciones para hacer con ellos como son añadir, elminar y consultarlos.
+En esta clase me valgo de un GtkTreeView para que aparezcan toda la lista de clientes actuales, un botón imprimir para imprimir y
+un combobox para seleccionar la acción que desea el usuario realizar.</p>
+<div class="section" id="imprimir">
+<h4>Imprimir<a class="headerlink" href="#imprimir" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Si se selecciona al botón imprimir, este pasara a un cursor que devuelve la lista de clientes de la base de datos para insertarlos
+en el Pdf que genera a través de la librería Reportlab</p>
+</div>
+<div class="section" id="opciones">
+<h4>Opciones<a class="headerlink" href="#opciones" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Si el usuario selecciona el combobox, este enviará una señal para que aparezca la susodicha clase.
+Recibe un parámetro String, del Comobobox para saber qué quiere realizar el usuario.
+Dependiendo de esto tenemos:</p>
+<div class="section" id="ingresar">
+<h5>ingresar()<a class="headerlink" href="#ingresar" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Cambia el String y el cursor para añadir un cliente</p>
+</div>
+<div class="section" id="consultar">
+<h5>consultar()<a class="headerlink" href="#consultar" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Aprece un Treeview con el resulado de la busqueda de Clientes y un combobox para seleccionar cuál de ellos es el que buscas.</p>
+</div>
+<div class="section" id="eliminar">
+<h5>eliminar()<a class="headerlink" href="#eliminar" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Cambia el String y el cursor para eliminar un cliente</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Proyecto Coches</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Información</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ventana-principal">Ventana principal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#producto">Producto</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nuevoser">nuevoser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#eliminaser">eliminaser</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cliente">Cliente</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#imprimir">Imprimir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opciones">Opciones</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ingresar">ingresar()</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#consultar">consultar()</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#eliminar">eliminar()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="proyecto.html">Código del Proyecto</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="capítulo anterior">Bienvenido a la documentación del proyecto</a></li>
+      <li>Next: <a href="proyecto.html" title="próximo capítulo">Código del Proyecto</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Celso S.R..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Gestion.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

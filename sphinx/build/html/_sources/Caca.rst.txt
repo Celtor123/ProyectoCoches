@@ -1,0 +1,9 @@
+Código del Proyecto2
+********************
+
+.. autoclass:: Exame.Principal.Xestion
+   :attribute:
+   :noindex:
+   :members:
+   :undoc-members:
+   :show-inheritance:
