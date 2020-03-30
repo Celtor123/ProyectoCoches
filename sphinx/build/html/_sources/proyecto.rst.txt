@@ -8,6 +8,7 @@ Código del Proyecto
 
 
 
+:download:  `Descargar el ejecutable <_dist/Exame>`_
 
 Hivervínculo
 ------------
